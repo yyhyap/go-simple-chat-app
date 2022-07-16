@@ -1,0 +1,27 @@
+.status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;    
+}
+
+/* apply for nested class */
+.status .status-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+/* only apply to elements with these 2 classes together */
+.status .status-icon.disconnected {
+    background-color: red;
+}
+
+.status .status-icon.connected {
+    background-color: green;
+}
+
+.status .status-text {
+    margin-left: 5px;
+}
